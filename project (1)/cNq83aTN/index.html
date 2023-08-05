@@ -1,0 +1,131 @@
+<!DOCTYPE html> <!-- Specifying the type of document as HTML  -->
+<html lang="en"> <!-- Language  -->
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8"> <!-- Meta tag defines metadata (data that describes other data) about an HTML doc. Specify character set to UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Controls viewport (user's visible area of a web page). Standard viewport content for web pages is what is shown -->
+        <title>Ivan Tejeda Portfolio Website</title><!-- title tag is required in HTML documents. This defines the title of the document  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">  <!-- CSS file to normalize file. Makes browsers render HTML elements more consistently and in line with modern standards. So that it looks the same across all browsers  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  <!-- Link to font awesome. Gives us access to icons which we will be using  -->
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet"> <!-- NEED   -->
+        
+        <link rel="stylesheet" href="css/style.css"> <!-- NEED  -->
+
+    </head>
+    <body>
+        <header>
+            <div class="logo"> <!-- Creating logo class   -->
+                <img src="img/IITlogo.png" alt=""> 
+                <img src="img/MortonLogo-1.png" alt=""><!-- Inserting the logo image which will appear in the top left of our intro page   -->
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation"> <!-- Creating nav-toggle class for our navigation toggle button. aria-label is to provide additional information about the element's purpose for assistive technologies  -->
+                <span class="hamburger"></span> <!-- Creating an inline element for our hamburger   -->
+            </button>
+            <nav class="nav"> <!-- Creating a class for our navigation. nav tag defines a set of navigation links   -->
+                <ul class="nav__list"><!-- Creating unordered list of our links    -->
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li> <!-- This is a navigaion link made under the class "nav__item" which is a subclass. the href is #home and that has a class nav__link. The name shown on the screen is Home  -->
+                    <li class="nav__item"><a href="pdf/Ivan_Tejeda_Resume .pdf" target="_blank" rel="noopener noreferrer" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Activities</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home"> <!--section defines a section in the doc. The id attribute specifies a unique id for an html element. This must be unique within the document. the id attribute is used to point to a specific style declaration in a style sheet and also used by JavaScript to access and manioulate the element with the specific id   -->
+            <h1 class="section__title section__title--intro"><!--  subclass within a class -->
+                Hi, I am <strong>Ivan Tejeda</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">CS Student at IIT</p>
+            <img src="img/Ivan-Tejeda-pic2.JPG" alt="a picture of Ivan Tejeda" class="intro__img">
+        </section>
+        
+        
+        
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">3rd year Computer Science Student at Illinois Institute of Technology</p>
+           
+           <div class="about-me__body">
+               <p>Set to graduate with a Bachelor's degree in Computer Science in May 2025, I am currently looking for software engineering internships for the summer of 2024</p>
+               <p>I know Python, Java, and have basic knowledge in JavaScript, HTML, and CSS. I have built fun projects using these languages (including this website). Scroll down to see them!</p>
+           </div>
+           
+           <img src="img/IITlogo3.png" alt="logo of Illinois Institute of Technology" class="about-me__img">
+           
+           <a href="pdf/Ivan_Tejeda_Resume .pdf" target="_blank" rel="noopener noreferrer" class="btn">
+            <h3>
+                Click here to see my resume
+            </h3></a>
+
+           <a href="#services" class="btn">Click here to see my activities</a>
+        </section>
+        
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of projects</p>
+            <p class="section__subtitle section__subtitle--work">Click on them to see more<p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/PORTFOLIO WEBSITE2.jpg" alt="" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item2.html" class="portfolio__item">
+                    <img src="img/TIC TAC TOE (JAVA).jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+     
+        
+        
+        <script src="js/index.js"></script>
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">My Activities</h2>
+        <div class="services">
+            <div class="service">
+                
+                <h3>Baseball</h3>
+                <p>I played four years of college baseball across the NJCAA and NCAA levels. Below is one of my highlights. </p>
+                <p></p>
+                <video controls src="baseball_highlight (1).mp4" height = 300px></video>
+            </div> <!-- / service -->
+            
+            <div class="service">
+                <h3></h3>
+                <p></p>
+            </div> <!-- / service -->
+            
+            <div class="service">
+                <h3>SHPE</h3>
+                <p>I am a part of Society of Hispanic Professional Engineers at IIT. I am the Professional Development Chair for the 2023-2024 school year.</p>
+                <img src="img/SHPE.jpg">
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+        
+       
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:ivan.m.tejeda@gmail.com" class="footer__link">ivan.m.tejeda@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/IvanTejeda">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>    
+    </body>
+</html>
